@@ -28,6 +28,8 @@
     </style>
 </head>
 <body>
+    <!-- 本页为组员负责的“特价活动”模块，集中展示旅游线路优惠和限时抢购信息。 -->
+    <!-- 顶部导航栏：提供全站页面入口，并高亮当前特价活动页面。 -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -59,10 +61,13 @@
     </nav>
 
     <div class="container">
+        <!-- 页面标题：说明本页主要展示限时优惠活动。 -->
         <h2 class="page-header">限时特价活动</h2>
         
+        <!-- 特价活动列表：使用 Bootstrap 缩略图卡片展示三个优惠套餐。 -->
         <div class="row">
             <div class="col-md-4">
+                <!-- 活动卡片：巴黎浪漫之旅，展示折扣、价格、包含项目和抢购按钮。 -->
                 <div class="thumbnail">
                     <img src="https://via.placeholder.com/300x200?text=Paris+Deal" alt="巴黎特惠">
                     <div class="caption">
@@ -78,6 +83,7 @@
             </div>
             
             <div class="col-md-4">
+                <!-- 活动卡片：日本樱花季，突出热门推荐和特色体验项目。 -->
                 <div class="thumbnail">
                     <img src="https://via.placeholder.com/300x200?text=Japan+Deal" alt="日本特惠">
                     <div class="caption">
@@ -93,6 +99,7 @@
             </div>
             
             <div class="col-md-4">
+                <!-- 活动卡片：纽约购物之旅，展示购物、观光和演出等组合优惠。 -->
                 <div class="thumbnail">
                     <img src="https://via.placeholder.com/300x200?text=New+York+Deal" alt="纽约特惠">
                     <div class="caption">
@@ -108,6 +115,7 @@
             </div>
         </div>
         
+        <!-- 温馨提示：提醒用户特价活动名额有限，增强活动紧迫感。 -->
         <div class="alert alert-warning" role="alert">
             <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
             <strong>温馨提示：</strong> 特价活动名额有限，先到先得！
