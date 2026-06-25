@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>旅游攻略</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <style>
+        body { padding-top: 70px; }
+        .guide-item { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <!-- 本页为本人负责的“旅游攻略”模块，提供行李、安全、预算等出行建议。 -->
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">探索之旅</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="page2.html">热门城市</a></li>
+                    <li><a href="page3.html">精选酒店</a></li>
+                    <li class="active"><a href="page4.html">旅游攻略</a></li>
+                    <li><a href="page5.html">关于我们</a></li>
+                    <li><a href="page6.html">商品推荐</a></li>
+                    <li><a href="page7.html">联系我们</a></li>
+                    <li><a href="page8.html">用户登录</a></li>
+                    <li><a href="page9.html">注册账户</a></li>
+                    <li><a href="page10.html">常见问题</a></li>
+                    <li><a href="page11.html">特价活动</a></li>
+                    <li><a href="page12.html">网站地图</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- 页面标题：说明本页汇总旅行前和旅行中的实用攻略。 -->
+        <h2 class="page-header">旅游攻略大全</h2>
+        
+        <!-- 攻略分类布局：左侧为分类导航，右侧为对应攻略详情。 -->
+        <div class="row">
+            <div class="col-md-4">
+                <!-- 左侧分类列表：通过锚点快速跳转到不同攻略内容。 -->
+                <div class="list-group">
+                    <a href="#packing" class="list-group-item active">行李打包</a>
+                    <a href="#safety" class="list-group-item">安全须知</a>
+                    <a href="#budget" class="list-group-item">预算控制</a>
+                    <a href="#transport" class="list-group-item">交通指南</a>
+                    <a href="#food" class="list-group-item">美食推荐</a>
+                </div>
+            </div>
+            
+            <div class="col-md-8">
+                <!-- 行李打包攻略：列出旅行前需要准备的基础物品和收纳建议。 -->
+                <div id="packing" class="guide-item">
+                    <h3><span class="glyphicon glyphicon-suitcase"></span> 行李打包技巧</h3>
+                    <p><strong>基础清单：</strong></p>
+                    <ul>
+                        <li>证件类：护照/身份证、签证、机票/车票</li>
+                        <li>衣物类：根据天气准备，建议带百搭单品</li>
+                        <li>电子类：手机、充电器、转换插头</li>
+                        <li>洗漱类：牙膏、牙刷、洗发水、护肤品</li>
+                        <li>药品类：感冒药、肠胃药、创可贴、晕车药</li>
+                    </ul>
+                    <p><strong>打包小贴士：</strong>使用收纳袋分类存放，重物放在底部，贵重物品随身携带。</p>
+                </div>
+                
+                <!-- 安全须知：从人身安全和财产安全两个角度提醒用户规避风险。 -->
+                <div id="safety" class="guide-item">
+                    <h3><span class="glyphicon glyphicon-lock"></span> 旅行安全指南</h3>
+                    <p><strong>人身安全：</strong></p>
+                    <ul>
+                        <li>避免前往偏僻地区，夜间尽量结伴而行</li>
+                        <li>保管好个人财物，警惕扒手</li>
+                        <li>了解当地紧急电话和使领馆联系方式</li>
+                    </ul>
+                    <p><strong>财产安全：</strong></p>
+                    <ul>
+                        <li>使用酒店保险箱存放贵重物品</li>
+                        <li>分散存放现金和银行卡</li>
+                        <li>警惕各种诈骗手段</li>
+                    </ul>
+                </div>
+                
+                <!-- 预算控制：使用 Bootstrap 进度条展示旅行费用分配比例。 -->
+                <div id="budget" class="guide-item">
+                    <h3><span class="glyphicon glyphicon-usd"></span> 旅行预算规划</h3>
+                    <p><strong>预算分配建议：</strong></p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 40%">交通费用</div>
+                        <div class="progress-bar progress-bar-primary" style="width: 30%">住宿费用</div>
+                        <div class="progress-bar progress-bar-warning" style="width: 20%">餐饮费用</div>
+                        <div class="progress-bar progress-bar-danger" style="width: 10%">购物娱乐</div>
+                    </div>
+                    <p><strong>省钱技巧：</strong>提前预订享受优惠，选择当地公共交通，尝试街头美食。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>

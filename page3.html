@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>精选酒店</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <style> body { padding-top: 70px; } </style>
+</head>
+<body>
+    <!-- 本页为本人负责的“精选酒店”模块，主要展示酒店推荐卡片、配套服务和预订入口。 -->
+    <!-- 顶部导航栏：保持全站页面入口一致，并高亮当前精选酒店页面。 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">探索之旅</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="page2.html">热门城市</a></li>
+                    <li class="active"><a href="page3.html">精选酒店</a></li>
+                    <li><a href="page4.html">旅游攻略</a></li>
+                    <li><a href="page5.html">关于我们</a></li>
+                    <li><a href="page6.html">商品推荐</a></li>
+                    <li><a href="page7.html">联系我们</a></li>
+                    <li><a href="page8.html">用户登录</a></li>
+                    <li><a href="page9.html">注册账户</a></li>
+                    <li><a href="page10.html">常见问题</a></li>
+                    <li><a href="page11.html">特价活动</a></li>
+                    <li><a href="page12.html">网站地图</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- 页面标题：说明本页内容为豪华住宿推荐。 -->
+        <h2 class="page-header">豪华住宿推荐</h2>
+        <!-- 酒店推荐区域第一行：展示海景度假酒店和市中心商务酒店。 -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- 酒店卡片：海景度假酒店，突出度假、海景和高端服务。 -->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">海景度假酒店</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="https://via.placeholder.com/150" alt="Hotel">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">五星级服务</h4>
+                                <p>位于黄金海岸线，拥有私人沙滩和无边泳池。提供全天候管家服务。</p>
+                                <ul class="list-unstyled">
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 免费早餐</li>
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 免费Wi-Fi</li>
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 健身房</li>
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 水疗中心</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">价格: ¥1200/晚 <button class="btn btn-success btn-sm pull-right">立即预订</button></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- 酒店卡片：市中心商务酒店，突出交通便利和商务配套。 -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">市中心商务酒店</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="https://via.placeholder.com/150" alt="Hotel">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">交通便利</h4>
+                                <p>紧邻地铁站和购物中心，适合商务出差和购物狂人。</p>
+                                <ul class="list-unstyled">
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 会议室</li>
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 行政酒廊</li>
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 免费停车</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">价格: ¥800/晚 <button class="btn btn-primary btn-sm pull-right">立即预订</button></div>
+                </div>
+            </div>
+        </div>
+        <!-- 酒店推荐区域第二行：展示设计酒店和生态环保酒店，丰富住宿选择。 -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- 酒店卡片：精品设计酒店，突出艺术氛围和设计特色。 -->
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">精品设计酒店</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="https://via.placeholder.com/150" alt="Hotel">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">艺术氛围</h4>
+                                <p>由知名设计师打造，每间客房都是艺术品。位于文艺街区。</p>
+                                <ul class="list-unstyled">
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 艺术画廊</li>
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 设计师餐厅</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">价格: ¥1500/晚 <button class="btn btn-info btn-sm pull-right">立即预订</button></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- 酒店卡片：生态环保酒店，突出绿色环保和自然体验。 -->
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">生态环保酒店</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="https://via.placeholder.com/150" alt="Hotel">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">绿色环保</h4>
+                                <p>采用可持续材料建造，位于自然保护区边缘，与自然和谐共处。</p>
+                                <ul class="list-unstyled">
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 有机餐饮</li>
+                                    <li><span class="glyphicon glyphicon-ok text-success"></span> 生态徒步</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">价格: ¥950/晚 <button class="btn btn-success btn-sm pull-right">立即预订</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>
